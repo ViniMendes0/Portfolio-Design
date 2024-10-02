@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+body {
+    background-color: #000418;
+    display: grid;
+}
+
+h1 {
+    font-family: 'portfolio';
+    color: white;
+    text-align: center;
+    border: 33px ridge #0a0f29;
+    padding: 10px;
+    margin: 10px auto;
+    outline: 4px auto #b9a8ed;
+    box-shadow: -1px -1px 13px 9px #1e2d7d1f;
+    border-radius: 10px 20px 30px 40px;
+}
+
+header {
+    background-image: linear-gradient(to bottom,var(--cordoheader), var(--cordefundo));
+    min-height: 150px;
+    text-align: center;
+    padding-bottom: 40px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.507);
+    
+
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte-android);
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px black;
+    padding: 10px;
+}
+header p {
+    color: white;
+    font-size: 1.2em;
+    color: white;
+    max-width: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+}
+
+aside ul {
+    list-style: none; 
+    padding: 10px;
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+}
+
+
+aside ul li {
+    position: relative; 
+    max-width: 200px; 
+}
+
+
+aside ul li img {
+    width: 100%;  
+    display: block;
+}
+
+
+aside ul li .text-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6); 
+    color: white;
+    text-align: center;
+    padding: 10px;
+    opacity: 0; 
+    transition: opacity 1s ease;
+}
+
+
+aside ul li:hover .text-overlay {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+footer {
+    font-family: 'portfolio';
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+footer a {
+    font-family: 'portfolio';
+    color: white;
+    text-align: center;
+    border: 7px ridge #0a0f29;
+    padding: 10px;
+    margin: 10px auto;
+    outline: 6px auto #b9a8ed;
+    box-shadow: -4px -1px 13px 9px #1e2d7d1f;
+    border-radius: 10px 20px 30px 40px;
+
+}
+footer a:hover {
+    text-decoration: none;
+}
+
+

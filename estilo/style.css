@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'portfolio';
+    src: url('Letras-esporte/Esporte.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #0a0f29;
+    height: 97vh;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-image: url('../imagensfundo/fundo-oficial.jpg');
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    min-width: 300px;
+    max-width: 800px;
+    margin: auto;
+}
+
+main img {
+    width: 100%;
+}
+
+ul a {
+    list-style-type: \2714\00a0\00a0;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav a {
+    color: #faf9f9;
+    text-align: center;
+    padding: 11px 10px;
+    background-color: #1d046dda;
+    border-radius: 47px;
+    box-shadow: 1px 1px 5px black;
+    text-decoration: none;
+    margin: 5px;
+    flex: 1 1 calc(25% - 20px); /* Adjust width based on screen size */
+}
+
+nav a:hover {
+    background-color: #ccc;
+    transition: 1s;
+}
+
+h1 {
+    font-size: 200%;
+    background-color: #01045A;
+    font-family: 'portfolio';
+    color: white;
+    text-align: center;
+    border: 33px ridge #0a0f29;
+    padding: 10px 10px 5px 10px; /* Reduz o padding inferior */
+    margin: auto;
+    outline: 4px auto #b9a8ed;
+    box-shadow: -1px -1px 13px 9px #1e2d7d1f;
+    border-radius: 10px 20px 30px 40px;
+    line-height: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 130px;
+}
+
+h3 nav {
+    font-family: monospace;
+    text-align: center;
+    text-decoration: underline;
+    box-shadow: 1px #0000003b;
+}
+
+h4 {
+    padding: 7px;
+    color: #0000008e;
+}
+
+ul {
+    color: white;
+    text-align: left;
+    height: 1em;
+}
+
+dl {
+    color: white;
+    height: 1em;
+    text-align: end;
+}
+
+a {
+    text-align: center;
+    font-weight: normal;
+    padding: 14px;
+}
+
+@media (max-width: 768px) {
+    nav a {
+        flex: 1 1 calc(50% - 20px); /* Two items per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        flex: 1 1 calc(100% - 20px); /* One item per row on small screens */
+    }
+}
